@@ -61,38 +61,30 @@
 .green { background-color: #00ca4e; }
 
 /*------------------MENÚ DE HAMBURGUESA--------------------- */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24px;
-  height: 18px;
-  cursor: pointer;
-  position: absolute;
-  top: 13px;
-  right: 20px;
-  z-index: 1001;
-}
-
-.button-menu {
-  width: 100%;
-  height: 2px;
-  background-color: #333;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  transform-origin: center;
-}
-
-/* Estilos para móviles */
-@media (max-width: 768px) {
-  .nav-links, .nav-right {
-      display: none;
-  }
-
   .menu-toggle {
-      display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    z-index: 1001;
   }
-
-  .nav-links.active {
+  
+  .button-menu {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 768px) {
+    .nav-links.active {
       display: flex;
       flex-direction: column;
       position: fixed;
@@ -105,15 +97,36 @@
       align-items: center;
       z-index: 999;
       animation: slideIn 0.5s ease forwards;
+      padding: 0; /* Asegura que no haya padding */
+      margin: 0; /* Asegura que no haya margen */
   }
 
+  /* Reset completo para la lista */
+  .nav-links.active ul {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+  }
+
+  /* Estilos para cada elemento de la lista */
   .nav-links.active li {
-      margin: 20px 0;
+      margin: 15px 0;
+      width: auto;
+      text-align: center;
   }
 
+  /* Estilos para los enlaces */
   .nav-links.active a {
       font-size: 25px;
       color: #333;
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+      position: relative;
   }
 
   /* Animación del botón sandwich a "X" */
