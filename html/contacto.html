@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto2.css">
+    <link rel="icon" href="../image/icon3.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Proyectos</title>
+</head>
+<body>
+    <!-- Pantalla de carga -->
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Top NAV -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <span class="circle red"></span>
+            <span class="circle yellow"></span>
+            <span class="circle green"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./sobremi.html">Sobre mí</a></li>
+            <li><a href="./proyectos.html">Proyectos</a></li>
+            <li><a href="./certificados.html">Certificados</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        <ul class="nav-right">
+            <li><a href="https://github.com/alan-bracamontes" target="_blank">GitHub</a></li>
+            <li><a href="https://mx.linkedin.com/in/alan-bracamontes-de-la-cruz-1baa79310" target="_blank">LinkedIn</a></li>
+        </ul>
+        <!-- Botón "sandwich" para dispositivos móviles -->
+        <div class="menu-toggle" id="mobile-menu">
+            <div class="button-menu"></div>
+            <div class="button-menu"></div>
+            <div class="button-menu"></div>
+        </div>
+    </nav>
+
+    
+    <!----- Container ----->
+    <div class="container">
+        <h1>Contacto</h1>
+        <form id="contactForm" class="form">
+            <p class="title">Disponible para oportunidades laborales</p>         
+            <label>
+                <input type="email" id="email" name="email" required class="input" placeholder="ejemplo@email.com">
+            </label> 
+                
+            <label>
+                <textarea id="message" name="message" required class="input form-textarea" placeholder="Detalles de la oportunidad" rows="5"></textarea>
+            </label>
+            <button type="submit" class="submit">Enviar Solicitud</button>
+        </form>
+        <div id="successAnimation" class="success-animation">
+            <div class="checkmark-circle">
+                <div class="checkmark">✓</div>
+            </div>
+            <div class="success-text">¡Mensaje enviado!<br>Te contactaré pronto muchas gracias</div>
+        </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>“Creando código con pasión y café ☕”</p>
+        <div class="social-links">
+            <a href="https://github.com/alan-bracamontes" target="_blank">GitHub</a> |
+            <a href="https://mx.linkedin.com/in/alan-bracamontes-de-la-cruz-1baa79310" target="_blank">LinkedIn</a> |
+            <a href="../cv/AlanBracamontes_CV.pdf" download="Alan_Bracamontes_CV.pdf" class="cv-link">Descargar CV 📄</a>
+        </div>
+        <p class="copy">© 2025 Alan Bracamontes. Hecho con ❤️ en la web.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../javascript/scriptcarga.js"></script>
+    <script src="../javascript/script.js"></script>  
+    <script src="../javascript/scriptmsj.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
